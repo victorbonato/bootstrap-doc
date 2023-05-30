@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="bootstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Interativa</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nb-container">
+            <a class="link-to-home" href="bootstrap.html">
+                <div class="home">
+                    <img class="icon" src="iconm1.png">
+                    <p class="nb-item text">Bootstrap</p>
+                    <p class="nb-item text"></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="container-int">
+        <div class="header">
+            <h1>Teste o Bootstrap!</h1>
+            <p class="text explain">Nosso ambiente de testes permite que você pratique e teste as funcionalidades do Bootstrap.</p>
+        </div>
+        
+        <div class="blocoSetor">
+            <form id="formulario">
+                <textarea class="caixa" id="caixaDialogo"><p class="h1">O parágrafo aparece como um h1 devido à classe do bootstrap</p></textarea>
+                <input style="width: 150px; margin-top: 15px; margin-right: 10px;" type="submit" class="botao">
+            </form>
+            <iframe id="iframev" class="resultado" frameborder="0" style="background-color: white"></iframe>
+        </div>
+    </div>  
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="interacao.js"></script>
+    
+</body>
+</html>

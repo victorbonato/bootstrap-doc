@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="bootstyle.css">
+        <link href="prism.css" rel="stylesheet"/>
+        <script src="prism.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="nb-container">
+                <a class="link-to-home" href="bootstrap.html">
+                    <div class="home">
+                        <img class="icon" src="iconm1.png">
+                        <p class="nb-item text">Bootstrap</p>
+                        <p class="nb-item text"></p>
+                    </div>
+                </a>
+                <div class="test-area-link">
+                    <p class="nb-item text">
+                        <a href="interacao.html" class="link-to-int">Ambiente de Testes</a>
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <div class="index">
+                <ol class="ol-index">
+                    <a href="#install"><li class="link-index">Instalação</li></a>
+                    <a href="#creating"><li class="link-index">Primeira página</li></a>
+                    <a href="#grid"><li class="link-index">Grid</li></a>
+                    <a href="#navigation"><li class="link-index">Navegação</li></a>
+                    <a href="#buttons"><li class="link-index">Botões</li></a>
+                    <a href="#conclusion"><li class="link-index">Conclusão</li></a>
+                    <a href="#contributors"><li class="link-index">Integrantes</li></a>
+                    <a href="#references"><li class="link-index">Referências</li></a>
+                </ol>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Bootstrap, o que é?</h1>
+            <p class="text">Bootstrap é um framework de código aberto bastante popular usado para criar interfaces web responsivas e visualmente atraentes. Desenvolvido originalmente para o Twitter, ele oferece uma variedade de estilos CSS, componentes JavaScript e um sistema de grid adaptável. Com o Bootstrap, é mais fácil e eficiente criar sites e aplicativos que se ajustam automaticamente a diferentes dispositivos e tamanhos de tela.</p>
+            <section class="iad">
+                <div class="advantages-disadvantages">
+                    <div class="advantages">
+                        <h2 class="subt-adv">Vantagens</h2>
+                        <div class="ol-adv-wrapper">
+                            <ol class="ol-advantages">
+                                <li class="text">Evita trabalhos repetitivos em projetos.</li>
+                                <li class="text">Design responsivo capaz de se adaptar a diferentes telas.</li>
+                                <li class="text">Manter a consistência em times diferentes.</li>
+                                <li class="text">Design rápido de protótipos.</li>
+                                <li class="text">Compatibilidade com diversos navegadores.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <hr class="vertical-hr">
+
+                    <div class="disadvantages">
+                        <h2 class="subt-adv">Desvantagens</h2>
+                        <div class="ol-adv-wrapper">
+                            <ol class="ol-advantages">
+                                <li class="text">Difícil manutenção e leitura de grandes códigos.</li>
+                                <li class="text">Padronização código fonte dos websites que implementam o Bootstrap.</li>
+                                <li class="text">Algumas falhas de lógica.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin-top: 0px;">
+
+            <section id="install">
+                <h2>Instalando/Incluindo o Bootstrap no seu website</h2>
+                <p class="text-not-so-big">
+                    Para instalar/incluir o Bootstrap em um projeto, a forma mais prática é importar os arquivos de uma CDN(Content Delivery Network).
+                </p>
+                <p class="text">Você pode executar os seguintes passos:</p>
+                <ol class="ol-doc">
+                    <li><code class="language-html">&ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></code></li>
+                    <p class="text-not-so-big">Este código adiciona o link para o arquivo CSS do Bootstrap no seu documento HTML. O atributo href contém o URL do arquivo CSS hospedado no CDN do Bootstrap. Ele é responsável por aplicar os estilos pré-definidos do Bootstrap em seu projeto.</p>
+                    <li><code class="language-html">&ltscript src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></code></li>
+                    <p class="text-not-so-big">Este código inclui o link para o arquivo JavaScript do Bootstrap no seu documento HTML. O atributo src contém o URL do arquivo JavaScript(opcional) hospedado no CDN do Bootstrap. Ele é responsável por fornecer recursos interativos, como modais, abas, carrosséis, entre outros.</p>
+                </ol>
+                <div class="ou">
+                    <hr style="margin-top: 12px;" class="short-hr">
+                    <h3>Ou</h3>
+                    <hr class="short-hr">
+                </div>
+                <p class="text">
+                    Utilize uma versão local do Bootstrap.
+                </p>
+                <p class="text-not-so-big">
+                Para isso basta fazer o download do arquivo compactado com os arquivos necessários no site oficial do Bootstrap e arrasta-los para o projeto desejado.<br>
+                </p>
+                <p class="text">
+                    Siga o passo a passo: 
+                </p>
+                <ol class="ol-doc">
+                    <li class="down-i">Faça o download clicando no botão abaixo</li>                   
+                    <div class="botao-div">
+                        <button class="botao">Download</button><br>
+                    </div>
+                    <li class="down-i">Extraia os arquivos para a pasta do projeto e inclua o path local para os arquivos em vez da URL da CDN.</li>
+                    <li class="down-i">Utilize o bootstrap normalmente.</li>
+                </ol>                
+            </section>
+
+            <hr>
+
+            <section id="creating">
+                <h2>Criando a primeira página web com o Bootstrap</h2>
+                <ol class="ol-doc" style="margin-top: 20px;">
+                    <li class="instructions">Adicione o tipo de documento:</li>
+                    <p ><code class="language-html">&lt!DOCTYPE html></code></p>
+                    <p class="text-not-so-big">O bootstrap usa elementos HTML e propriedades que requerem o tipo de documento HTML5.</p>
+                    <li class="instructions">Garanta que a página será responsiva a dispositivos mobile:</li>
+                    <p><code class="language-html">&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"></code></p>
+                    <p class="text-not-so-big">O Bootstrap foi feito para ser adequado ao mobile.</p>
+                    <li class="instructions">Contêineres</li>
+                    <p class="text-not-so-big">O Bootstrap requer elementos contêineres para envolver os conteúdos do site.</p>
+                    <ul>
+                        <li>A classe <code class="language-css">.container</code> providencia um container com largura fixa.</li>
+                        <li>A classe <code class="language-css">.container-fluid</code> providencia um container com largura máxima, usando a amplitude total da página/viewport.</li>
+                    </ul>
+                </ol>
+            </section>
+
+            <hr>
+
+            <section id="grid">
+                <h2>Sistema de Grid</h2>
+                <p class="text-not-so-big">
+                    O sistema de grid do Bootstrap permite criar layouts responsivos e adaptáveis. Ele divide a página em linhas <code class="language-html">&ltdiv class="row"></code> e colunas <code class="language-html">&ltdiv class="col"></code>. Você pode definir o número de colunas em diferentes tamanhos de tela para criar layouts flexíveis.
+                </p>
+                <p>Exemplo:</p>
+                <pre><code class="language-html">
+    &ltdiv class="container">
+        &ltdiv class="row">
+            &ltdiv class="col-sm-6 col-md-4">Coluna 1&lt/div>
+            &ltdiv class="col-sm-6 col-md-4">Coluna 2&lt/div>
+            &ltdiv class="col-sm-6 col-md-4">Coluna 3&lt/div>
+        &lt/div>
+    &lt/div>
+                </code></pre>
+            </section>
+
+            <hr>
+
+            <section id="navigation">
+                <h2>Componentes de navegação</h2>
+                <p class="text-not-so-big">
+                    O Bootstrap fornece estilos e componentes para criar menus de navegação responsivos e intuitivos. Você pode usar a classe navbar para criar uma barra de navegação e as classes <code class="language-html">nav</code> e <code class="language-html">nav-item</code> para criar itens de menu.
+                </p>
+                <p>Exemplo:</p>
+                <pre><code class="language-html">
+&ltnav class="navbar navbar-expand-md navbar-light bg-faded">
+    &ltbutton class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        &ltspan class="navbar-toggler-icon">&lt/span>
+    &lt/button>
+    &lta class="navbar-brand" href="#">Navbar&lt/a>
+    &ltdiv class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        &ltdiv class="navbar-nav">
+            &lta class="nav-item nav-link active" href="#">Home &ltspan class="sr-only">(current)&lt/span>&lt/a>
+            &lta class="nav-item nav-link" href="#">Features&lt/a>
+            &lta class="nav-item nav-link" href="#">Pricing&lt/a>
+            &lta class="nav-item nav-link disabled" href="#">Disabled&lt/a>
+        &lt/div>
+    &lt/div>
+&lt/nav>                              
+                </pre></code>
+            </section>
+
+            <hr>
+
+            <section id="buttons">
+                <h2>Componentes de botões</h2>
+                <p class="text-not-so-big">
+                    O Bootstrap oferece estilos para criar botões atraentes com várias opções, como botões primários, secundários, de sucesso, de perigo, etc. Você pode usar as classes <code class="language-html">btn</code> e <code class="language-html">btn-*</code> para aplicar estilos aos botões.
+                </p>
+                <p>Exemplo:</p>
+                <pre><code class="language-html">
+    &ltbutton type="button" class="btn btn-primary">Botão Primário</button> 
+    &ltbutton type="button" class="btn btn-secondary">Botão Secundário</button> 
+    &ltbutton type="button" class="btn btn-success">Botão de Sucesso</button> 
+    &ltbutton type="button" class="btn btn-danger">Botão de Perigo</button>        
+                </code></pre>
+            </section>
+
+            <hr>
+
+            <section id="conclusion">
+                <h2>Conclusão</h2>
+                <p class="text-not-so-big">Essas são apenas algumas das funções básicas do Bootstrap. Existem muitos outros componentes e estilos disponíveis, como modais, formulários, carrosséis, alertas, entre outros. Consulte a documentação oficial do Bootstrap para obter mais informações detalhadas sobre como usar essas funções e explorar outros recursos disponíveis.</p>
+                <p><a class="link-oficial" href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">Confira a documentação oficial do Bootstrap</a></p>
+            </section>
+
+            <hr>
+            
+            <section id="contributors">
+                <div class="grupo">
+                    <h2 class="impacting">Integrantes do grupo</h2>
+                    <div class="names">
+                        
+                        <ul class="ul-names">
+                            <li class="name">Pedro Cortez Maia</li>
+                            <li class="name">Laila de Araújo Mota</li>
+                            <li class="name">Victor Bonato</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="references">
+                <h2>Referências</h2>
+                <p><a target="_blank" href="https://www.w3schools.com/bootstrap/bootstrap_get_started.asp" class="ref"> https://www.w3schools.com/bootstrap/bootstrap_get_started.asp</a></p>
+                <p><a target="_blank" href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" class="ref"> https://getbootstrap.com/docs/4.1/getting-started/introduction/</a></p>
+                <p><a target="_blank" href="https://www.clarity-ventures.com/blog/benefits-of-using-bootstrap-for-web-design" class="ref"> https://www.clarity-ventures.com/blog/benefits-of-using-bootstrap-for-web-design</a></p>
+                <script src="download.js"></script>
+            </section>
+        </div>
+    </body>
+</html>

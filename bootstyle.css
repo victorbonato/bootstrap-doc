@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+ :root{
+    --corDeFundoCorpo:  #24242c;
+    --corDeFundonavBar:#6c2cf4;
+    --corMenu:#67788a;
+    --corCaixasTeste: #363636;
+    --corTextoTeste: #C0C0C0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--corDeFundoCorpo);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: var(--corDeFundonavBar);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.nb-container {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.link-to-home:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.icon {
+    margin-top: 4px;
+    width: 50px;
+    height: 44px;
+    background-color: #6c2cf4;
+}
+
+.nb-item {
+    margin: 0px 10px;
+}
+
+.test-area-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3px;
+    font-family: sans-serif;
+}
+
+.link-to-int:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.container {
+    width: 75%;
+    min-width: 1195px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 105px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.iad {
+    height: auto;
+    display: flex;
+    margin: 37px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.advantages-disadvantages {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar {
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    width: 175px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.index {
+    background-color: var(--corDeFundonavBar);
+    height: 280px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 0px 5px 0px 10px;
+    box-shadow: 0px 1px 7px #16161c;
+}
+
+.link-index {
+    margin-top: 5px;
+    font-size: 19px;
+    font-family: 'Slabo 27px', serif;
+}
+
+.link-index:hover {
+    transition: 150ms;
+    color: black;
+}
+
+ol {
+    margin-top: 10px;
+}
+
+.ol-index {
+    padding: 1% 5% 1% 15%;
+    font-size: 17px;
+}
+
+.vertical-hr {
+    border: solid rgba(255, 255, 255, 0.3) 1px;
+    border-left: 0;
+    width: 0;
+    height: 300px;
+    margin: 0% 5%;
+}
+
+.advantages {
+    background-color:  #29313b;
+    border-radius: 20px;
+    font-size: 19px;
+    height: 100%;
+    height: 300px;
+    width: 41%;
+    min-width: 427px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 5px 10px #16161c;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.subt-adv {
+    margin-top: 10px;
+}
+
+.ol-adv-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ol-advantages {
+    padding: 1% 5% 1% 15%;
+    padding-left: 21px;
+    margin-top: 10px;
+}
+
+.disadvantages {
+    background-color:  #29313b;
+    border-radius: 20px;
+    font-size: 19px;
+    height: 100%;
+    height: 300px;
+    width: 41%;
+    min-width: 427px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 5px 10px #16161c;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 100ms;
+    color: rgb(178, 9, 205);
+}
+
+.short-hr {
+    margin: 8px 0px;
+    border: solid rgba(255, 255, 255, 0.3) 1px;
+    border-top: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 0px;
+}
+
+.ou {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+    border: solid rgba(255, 255, 255, 0.3) 1px;
+    border-top: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 0px;
+    margin: 37px 0px;
+}
+
+.text-not-so-big {
+    font-size: 18px;
+}
+
+.ol-doc {
+    padding: 0px 25px;
+    margin: 0px;
+}
+
+.down-i {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.botao-div {
+    display: flex;
+}
+
+.botao {
+    background-color: var(--corDeFundonavBar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding: 15px;
+    border-radius: 15px;
+    width:130px;
+    height: 50px;
+    margin: 10px 10px;
+    box-shadow: 0px 8px 15px #16161c;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+}
+
+.botao:hover {
+    transition: 200ms;
+    background-color: rgb(84, 0, 84);
+    cursor: pointer;
+    color: #fff;
+}
+
+.botao:active {
+    transition: 50ms;
+}
+
+ul li {
+    margin-top: 10px; 
+}
+
+.link-oficial {
+    color: var(--corDeFundonavBar);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#contributors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo {
+    width: 315px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.impacting {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+}
+.names {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ul-names {
+    padding-left: 20px;
+}
+
+.name {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.ref {
+    font-size: 16px;
+    color: rgb(0, 72, 255);
+    margin: 10px 0px;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.instructions {
+    font-size: 19px;
+}
+
+.container-int {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocoSetor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0px 0%;
+}
+
+#formulario {
+    height: 55vh;
+    width: 50%;
+    min-width: 400px;
+    min-height: 105px;
+    max-height: 589px;
+    min-width: 400px;
+    max-width: 40vw;
+}
+
+.caixa {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+    max-width: 40vw;
+    color: var(--corTextoTeste);
+    background-color: var(--corCaixasTeste);
+    box-shadow: 0px 4px 12px #16161c;
+}
+
+.resultado {
+    border-radius: 10px;
+    height: 55vh;
+    min-width: 400px;
+    min-height: 105px;
+    width: 50%;
+    max-width: 40vw;
+    max-height: 589px;
+    display: flex;
+    flex-direction: column;
+    border: solid var(--corDeFundonavBar) 1px;
+    background-color: var(--corCaixasTeste);
+    overflow: hidden;
+    box-shadow: 0px 8px 15px #16161c;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.explain {
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.separator {
+    height: 50px;
+    width: 50px;
+    background-color: var(--corDeFundoCorpo);
+}
